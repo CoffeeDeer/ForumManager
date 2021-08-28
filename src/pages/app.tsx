@@ -1,6 +1,6 @@
 import React from 'react';
 
-const app = () => {
+export const App = () => {
     return <div>
         <span>test</span>
     </div>
