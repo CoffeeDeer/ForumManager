@@ -1,0 +1,15 @@
+version: '3'
+services:
+  node:
+    build:
+      context: .
+      dockerfile: ./dockerfile
+    container_name: node
+    volumes:
+      - ./:/usr/app
+    ports:
+      - "3000:3000"
+      - "8080:8080"
+    stdin_open: true
+    tty: true
+    #restart: always
