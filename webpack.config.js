@@ -18,6 +18,10 @@ module.exports = {
         filename: 'bundle.js',
         path: path.resolve(__dirname, 'dist'),
     },
+    optimization: {
+        minimize: false, // <---- disables uglify.
+        // minimizer: [new UglifyJsPlugin()] if you want to customize it.
+    },
     devServer: {
         static: [
             { directory: path.resolve(__dirname, "./") }
